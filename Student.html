@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="icon" href="https://th.bing.com/th/id/OIP.NIgbhrCofGbMj3vDqjd9DgAAAA?pid=ImgDet&w=360&h=360&rs=1">
+    <link rel="stylesheet" href="submit.css">
+</head>
+<body>
+    <div class="hero">
+        <video autoplay loop muted plays-inline class="lavi">
+            <source src="Background Vedio.mp4" type="video/mp4">
+        </video>
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="teammates.html">MEMBERS</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <h3>ENTER YOUR DETAILS</h3>
+            <input type="email" id="email" placeholder="Registered Email">
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="text" id="password" placeholder="Registration Number">
+            <button type="submit" onclick="house()">SUBMIT</button>
+        </div>
+    </div>
+    <script>
+        function house(){
+            var email = document.getElementById("email").value;
+            var name = document.getElementById("name").value;
+            var number = document.getElementById("password").value;
+            if (email=='abc@gmail.com' && name == 'hari' && number == '12303841'){
+                window.location.assign("Stud_1.html");
+                alert("success");
+            }
+            else if (email=='ABC@gmail.com' && name == 'nitin' && number == '12345678'){
+                window.location.assign("Stud_2.html");
+                alert("success");
+            }
+            else{
+                alert("invalid credential");
+                return;
+            }
+        }
+    </script>
+</body>
+</html>
